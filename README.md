@@ -59,7 +59,12 @@ Procesamiento digital de imágenes: cómo una fotografía se representa como una
    cd numpy
    ```
 
-2. **Activar el entorno virtual (`.venv`):**
+2. **Crear el entorno virtual:**
+   ```bash
+   python -m venv .venv
+   ```
+
+3. **Activar el entorno virtual (`.venv`):**
    ```bash
    # macOS/Linux
    source .venv/bin/activate
@@ -68,14 +73,14 @@ Procesamiento digital de imágenes: cómo una fotografía se representa como una
    .venv\Scripts\activate
    ```
 
-3. **Instalar dependencias** (entorno nuevo o limpio):
+4. **Instalar las dependencias de la entrega:**
    ```bash
-   pip install numpy matplotlib notebook
+   python -m pip install -r requirements.txt
    ```
 
-4. **Iniciar Jupyter:**
+5. **Iniciar Jupyter:**
    ```bash
-   jupyter notebook
+   python -m notebook
    ```
 
 ---
@@ -88,3 +93,9 @@ Procesamiento digital de imágenes: cómo una fotografía se representa como una
 ---
 > [!NOTE]
 > Este proyecto forma parte de una ruta de aprendizaje orientada a **Ciencia de Datos**, **Computación Científica** y **Procesamiento de Imágenes**. ¡Perfecto para entusiastas del análisis de datos que inician su viaje en Python!
+
+## Entrega
+
+Los dos notebooks incluyen las salidas de todas sus celdas. El primero añade ejemplos de indexación, multiplicación vectorial y números aleatorios reproducibles. El segundo incluye los ejercicios de análisis de imagen con sus gráficas y explicaciones.
+
+El entorno `.venv` se crea localmente y está excluido de Git. `requirements.txt` registra las versiones utilizadas para recrearlo.
